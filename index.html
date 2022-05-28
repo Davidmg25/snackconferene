@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <h1>SnackConference</h1>
+    <form action="registrar.php" method="post"  class="form-register" onsubmit="return validar(); ">
+        <h2 class="form_t">Crear una cuenta</h2>
+        <div class="contenedor">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input48" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input48" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="input100" required>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input48" required>
+            <input type="password" id="password" name="password" placeholder="Password" class= "input48" required>
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input100" required>
+            <input type="submit" value="Registrar" class="btn-enviar" >
+            <p class="formlink">¿Ya tienes una cuenta? <a href="#">Ingresa aqui</a></p>
+        </div>
+    </form>
+</body>
+</html>
